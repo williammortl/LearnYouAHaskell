@@ -1,0 +1,88 @@
+5 + 5
+
+4 * 200
+
+True && True
+
+True && False
+
+succ 9
+
+succ 'a'
+
+max 9 10
+
+min (sin 12) 12
+
+doubleMe x = x + x
+
+doubleMe (doubleMe (doubleMe 2))
+
+doubleUnder100 x = if x < 100 then 2 * x else x
+
+[1,2,3,4] ++ [9,10,11,12]
+
+'A':" SMALL CAT"
+
+"A" ++ " SMALL CAT"
+
+"Taylor Swift" !! 0
+
+"Taylor Swift" !! 7
+
+"I <3 " ++ [("Taylor Swift" !! 0), ("Taylor Swift" !! 7)]
+
+let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+
+b !! 1 !! 0
+
+head [5,4,3,2,1]
+
+tail [5,4,3,2,1]
+
+last [5,4,3,2,1]
+
+init [5,4,3,2,1]
+
+null [1,2,3]
+
+null []
+
+take 3 [5,4,3,2,1]
+
+drop 3 [8,4,2,1,5,6]
+
+minimum [8,4,2,1,5,6]
+
+maximum [1,9,2,3,4]
+
+sum [5,2,1,6,3,2,5,7]
+
+product [6,2,1,2]
+
+4 `elem` [3,4,5,6]
+
+[1..20]
+
+['K'..'Z']
+
+[0.1, 0.3 .. 1]
+
+cycle [1,2,3]
+
+take 10 (cycle [1,2,3])
+
+take 12 (cycle "LOL ")
+
+[x*2 | x <- [1..10]]
+
+[x*2 | x <- [1..10], x*2 >= 12]
+
+[ x | x <- [50..100], x `mod` 7 == 3]
+
+boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x] 
+
+boomBangs [7..13]
+
+[ x | x <- [10..20], x /= 13, x /= 15, x /= 19]
+
