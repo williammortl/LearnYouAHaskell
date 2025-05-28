@@ -50,6 +50,8 @@ null []
 
 take 3 [5,4,3,2,1]
 
+take 10 (cycle [1,2,3])
+
 drop 3 [8,4,2,1,5,6]
 
 minimum [8,4,2,1,5,6]
@@ -96,7 +98,24 @@ fst (1, "hello")
 
 snd (1, "hello")
 
+secondOfThree (_, y, _) = y
+
 zip [1 .. 5] ["one", "two", "three", "four", "five"]
 
 let rightTriangles = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]
+
+-- get the type of anything
+
+:t (1,2,3,'a',[1,2,3,4])
+
+-- type declaration
+
+removeNonUppercase :: [Char] -> [Char]
+removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']] 
+
+factorial :: Integer -> Integer
+factorial n = product [1..n]
+
+circumference :: Float -> Float
+circumference r = 2 * pi * r
 
